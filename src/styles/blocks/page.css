@@ -1,0 +1,16 @@
+.page__body{
+    font-size: 16px;
+    line-height: 1.125;
+    color: var(--basic-dark-gray);
+}
+.title {
+    font-size: 32px;
+    font-weight: bold;
+}
+.text {
+    font-style: normal;
+    font-weight: 400;
+}
+a {
+    color: inherit;
+}

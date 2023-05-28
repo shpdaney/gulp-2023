@@ -1,0 +1,21 @@
+ /* Fonts  */
+
+ @font-face {
+	font-family: 'Helvetica';
+	src: url('../fonts/Helvetica/Helvetica_Regular.woff2') format('woff2'),
+	    url('../fonts/Helvetica/Helvetica_Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Helvetica';
+	src: url('../fonts/Helvetica/Helvetica_Bold.woff2') format('woff2'),
+	    url('../fonts/Helvetica/Helvetica_Bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+}
+
+* {
+	font-family: 'Helvetica';
+	font-weight: normal;
+}

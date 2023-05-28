@@ -1,0 +1,10 @@
+:root {
+
+  /* Color */
+	--basic-black: #070707;
+	--basic-dark-gray: #5C5C5E;
+	--basic-light-gray: #CACAD6;
+	--basic-white: #F6F4F5;
+
+	--special-gradient: linear-gradient(180deg, #BC10D8 0%, rgba(80, 0, 250, 0.93) 100%);;
+}
