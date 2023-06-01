@@ -2,7 +2,9 @@
   "private": true,
   "main": "gulpfile.js",
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "build": "gulp build",
+    "clean": "gulp cleanFolders"
   },
   "browserslist": [
     "last 2 version",
