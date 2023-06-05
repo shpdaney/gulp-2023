@@ -34,6 +34,7 @@
     "postcss-csso": "^6.0.1",
     "postcss-import": "^15.1.0",
     "postcss-media-minmax": "^5.0.0",
-    "sass": "^1.62.1"
+    "sass": "^1.62.1",
+    "webpack-stream": "^7.0.0"
   }
 }

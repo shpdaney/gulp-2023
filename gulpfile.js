@@ -4,10 +4,11 @@ const htmlmin = require('gulp-htmlmin');
 const sass = require('gulp-sass')(require('sass'));
 const postcss = require('gulp-postcss');
 
+const webpack = require('webpack-stream');
 const babel = require('gulp-babel');
-const concat = require('gulp-concat');
+// const concat = require('gulp-concat');
 const uglify = require('gulp-uglify-es').default;
-const sourcemaps = require("gulp-sourcemaps");
+// const sourcemaps = require("gulp-sourcemaps");
 
 const newer = require('gulp-newer');
 const webp = require('gulp-webp');
@@ -94,14 +95,18 @@ exports.buildStyles = buildStyles;
 
 // Scripts
 function scripts () {
-  return gulp.src(path.src.js + '*.js')
-    // .pipe(sourcemaps.init())
+  return gulp.src(path.src.js + 'index.js')
+    .pipe(webpack(
+      {
+        mode: "development",
+        output: {
+          filename: 'index.js',
+        }
+      }
+    ))
     .pipe(babel({
         presets: ['@babel/preset-env']
     }))
-    .pipe(concat('index.js'))
-    // .pipe(uglify())
-    // .pipe(sourcemaps.write('../maps'))
     .pipe(gulp.dest(path.dist.js))
     .pipe(browserSync.stream());
 }
