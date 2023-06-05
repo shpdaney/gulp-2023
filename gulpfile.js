@@ -93,8 +93,12 @@ function fonts () {
       .pipe(ttf2woff({
         ignoreExt: true,
       }))
-      .pipe(gulp.src('src/fonts/**/*.ttf'))
-      .pipe(ttf2woff2())
+      .pipe(gulp.dest('dist/fonts'))
+
+      .pipe(gulp.src('src/fonts/**/*.{ttf,otf}'))
+      .pipe(ttf2woff2({
+        ignoreExt: true,
+      }))
 
       .pipe(gulp.dest('dist/fonts'))
 }
