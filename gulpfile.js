@@ -140,12 +140,14 @@ exports.images = images;
 // Fonts
 function fonts () {
   return gulp.src(path.src.fonts + '**/*.{ttf,otf}')
+    .pipe(newer(path.dist.fonts))
     .pipe(ttf2woff({
       ignoreExt: true,
     }))
     .pipe(gulp.dest(path.dist.fonts))
 
     .pipe(gulp.src(path.src.fonts + '**/*.{ttf,otf}'))
+    .pipe(newer(path.dist.fonts))
     .pipe(ttf2woff2({
       ignoreExt: true,
     }))
@@ -186,8 +188,6 @@ function cleanFolders() {
       read: false
     })
     .pipe(clean())
-    // return gulp.src('dist', {read: false})
-    //     .pipe(clean());
 }
 exports.cleanFolders = cleanFolders;
 

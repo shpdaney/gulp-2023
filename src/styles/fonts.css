@@ -8,14 +8,14 @@
 	font-style: normal;
 }
 @font-face {
-	font-family: 'Helvetica';
-	src: url('../fonts/Helvetica/Helvetica_Bold.woff2') format('woff2'),
-	    url('../fonts/Helvetica/Helvetica_Bold.woff') format('woff');
-	font-weight: 700;
+	font-family: 'Lato';
+	src: url('../fonts/Lato/Lato-Regular.woff2') format('woff2'),
+	    url('../fonts/Lato/Lato-Regular.woff') format('woff');
+	font-weight: 400;
 	font-style: normal;
 }
 
 * {
-	font-family: 'Helvetica';
+	font-family: 'Lato', sans-serif;
 	font-weight: normal;
 }
