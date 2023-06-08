@@ -1,12 +1,13 @@
 /* Global */
 
-@import 'reset.css';
-@import 'fonts.css';
-@import 'var.css';
+@import './dependence/normalize.css';
+@import './dependence/reset.css';
+@import './dependence/fonts.css';
+@import './var.css';
+@import './base.css';
 
 /* Blocks */
 
-@import 'blocks/page.css';
-@import 'blocks/container.css';
-@import 'blocks/header.scss';
+@import './blocks/container.css';
+@import './blocks/header.scss';
 

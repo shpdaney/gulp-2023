@@ -6,7 +6,6 @@ const postcss = require('gulp-postcss');
 
 const webpack = require('webpack-stream');
 const babel = require('gulp-babel');
-// const concat = require('gulp-concat');
 const uglify = require('gulp-uglify-es').default;
 // const sourcemaps = require("gulp-sourcemaps");
 
